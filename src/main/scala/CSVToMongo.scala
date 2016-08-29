@@ -44,7 +44,6 @@ object CSVToMongo {
 	val titanicMongoDF = MongoSpark.load(sc, readConfig).toDF[TitanicData]
 	}
     }	
-    }	
     MongoInterface.WriteDB()
     MongoInterface.ReadDB()
   }
