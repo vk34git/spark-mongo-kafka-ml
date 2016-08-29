@@ -30,13 +30,22 @@ object CSVToMongo {
 
     
    object MongoInterface {
-     def ReadDB() {
 	import com.mongodb.spark.MongoSpark
 	import com.mongodb.spark.config.{ReadConfig, WriteConfig}
+     def WriteDB() {
 	val writeConfig = WriteConfig(Map("uri"->"mongodb://localhost:27017/test.TitanicTrain"))
         MongoSpark.save(titanicDF.write.mode("overwrite"),writeConfig)
 	}
+     def ReadDB() {
+	val readConfig = ReadConfig(Map("uri"->"mongodb://localhost:27017/test.TitanicTrain"))
+	case class TitanicData(user_id: Int, movie_id: Int, rating: Double)
+
+	// Load the movie rating data
+	val titanicMongoDF = MongoSpark.load(sc, readConfig).toDF[TitanicData]
+	}
     }	
+    }	
+    MongoInterface.WriteDB()
     MongoInterface.ReadDB()
   }
 }
