@@ -1,0 +1,29 @@
+[0m[[0minfo[0m] [0mPackaging C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\spark-mongo-kafka-_2.10-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	JavaDirectKafkaWordCount$3.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\classes\JavaDirectKafkaWordCount$3.class[0m
+[0m[[0mdebug[0m] [0m	org\apache[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\classes\org\apache[0m
+[0m[[0mdebug[0m] [0m	JavaDirectKafkaWordCount$4.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\classes\JavaDirectKafkaWordCount$4.class[0m
+[0m[[0mdebug[0m] [0m	org\apache\spark\examples\streaming\CSVToMongo$.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\classes\org\apache\spark\examples\streaming\CSVToMongo$.class[0m
+[0m[[0mdebug[0m] [0m	JavaDirectKafkaWordCount$1.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\classes\JavaDirectKafkaWordCount$1.class[0m
+[0m[[0mdebug[0m] [0m	JavaDirectKafkaWordCount$2.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\classes\JavaDirectKafkaWordCount$2.class[0m
+[0m[[0mdebug[0m] [0m	org\apache\spark\examples\streaming[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\classes\org\apache\spark\examples\streaming[0m
+[0m[[0mdebug[0m] [0m	JavaDirectKafkaWordCount.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\classes\JavaDirectKafkaWordCount.class[0m
+[0m[[0mdebug[0m] [0m	org\apache\spark\examples\streaming\CSVToMongo.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\classes\org\apache\spark\examples\streaming\CSVToMongo.class[0m
+[0m[[0mdebug[0m] [0m	org[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\classes\org[0m
+[0m[[0mdebug[0m] [0m	org\apache\spark[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\classes\org\apache\spark[0m
+[0m[[0mdebug[0m] [0m	org\apache\spark\examples[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\classes\org\apache\spark\examples[0m
+[0m[[0mdebug[0m] [0m	org\apache\spark\examples\streaming\CSVToMongo$MongoInterface$2$.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\vkoda\demos\sparkmongokafka\target\scala-2.10\classes\org\apache\spark\examples\streaming\CSVToMongo$MongoInterface$2$.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

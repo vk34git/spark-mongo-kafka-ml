@@ -1,0 +1,19 @@
+apply plugin: 'java'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+def scalaVersion = "2.10"
+dependencies {
+    compile "org.apache.spark:spark-streaming_${scalaVersion}:1.6.1"
+    compile "org.apache.spark:spark-streaming-kafka_${scalaVersion}:1.6.1"
+    compile "org.apache.spark:spark-core_2.10"
+    compile "org.apache.kafka:kafka-clients:0.9.0.1"
+}
+jar {
+    baseName = 'KafkaTest'
+    version =  '0.1.0'
+}

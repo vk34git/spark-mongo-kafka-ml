@@ -1,0 +1,38 @@
+// scalastyle:off println
+package org.apache.spark.examples.streaming
+
+import org.apache.spark.sql.SparkSession
+
+object CSVToMongo {
+  def main(args: Array[String]) {
+    if (args.length < 2) {
+      System.err.println(s"""
+        |Usage: CSVToMongo <csvfile> <mongoconn>
+        |  <csvfile> is a file  of titanic data
+        |  <mongoconn> is mongo server
+        |
+        """.stripMargin)
+      System.exit(1)
+    }
+
+
+    val Array(csvfile, mongoconn) = args
+
+   val spark = SparkSession.builder.appName("CSVToMongo").config("spark.sql.warehouse.dir", "file:///c:/temp/spark-warehouse").master("local").getOrCreate()
+    val titanicDF = spark.read.option("header","true").csv("file:///c:\\SparkCourse\\titanic\\train.csv")
+    titanicDF.show()
+
+    
+   object MongoInterface {
+     def ReadDB() {
+	import com.mongodb.spark.MongoSpark
+	import com.mongodb.spark.config.{ReadConfig, WriteConfig}
+	val writeConfig = WriteConfig(Map("uri"->"mongodb://localhost:2151/test.TitanicTrain"))
+        MongoSpark.save(titanicDF.write.mode("overwrite"),writeConfig)
+	}
+    }	
+    MongoInterface.ReadDB()
+  }
+}
+// scalastyle:on println
+
